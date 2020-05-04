@@ -1,0 +1,72 @@
+style "treeview_header" {
+  ythickness = 1
+
+  engine "pixmap" {
+
+    image {
+      function = BOX
+      state = NORMAL
+      file = "assets/tree_header.png"
+      border = { 1, 1, 1, 1 }
+      stretch = TRUE
+    }
+    
+    image {
+      function = BOX
+      state = PRELIGHT
+      file = "assets/tree_header_hover.png"
+      border = { 1, 1, 1, 1 }
+      stretch = TRUE
+    }
+ 
+  
+    image {
+      function        = ARROW
+      state           = NORMAL
+      overlay_file    = "assets/treeview-pan-up.png"
+      overlay_stretch = FALSE
+      arrow_direction = UP
+    }
+
+    image {
+      function        = ARROW
+      state           = PRELIGHT
+      overlay_file    = "assets/treeview-pan-up-hover.png"
+      overlay_stretch = FALSE
+      arrow_direction = UP
+    }
+
+    image {
+      function        = ARROW
+      state           = ACTIVE
+      overlay_file    = "assets/treeview-pan-up-active.png"
+      overlay_stretch = FALSE
+      arrow_direction = UP
+    }
+
+    image {
+      function        = ARROW
+      state           = NORMAL
+      overlay_file    = "assets/treeview-pan-down.png"
+      overlay_stretch = FALSE
+      arrow_direction = DOWN
+    }
+
+    image {
+      function        = ARROW
+      state           = PRELIGHT
+      overlay_file    = "assets/treeview-pan-down-hover.png"
+      overlay_stretch = FALSE
+      arrow_direction = DOWN
+    }
+
+    image {
+      function        = ARROW
+      state           = ACTIVE
+      overlay_file    = "assets/treeview-pan-down-active.png"
+      overlay_stretch = FALSE
+      arrow_direction = DOWN
+    }
+  }
+}
+widget_class "*<GtkTreeView>*<GtkButton>*"                          style "treeview_header"

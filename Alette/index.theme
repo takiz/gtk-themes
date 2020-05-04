@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Alette
+Comment=GTK+ theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Alette
+MetacityTheme=Alette
+CursorTheme=Adwaita
+ButtonLayout=close,minimize,maximize:

@@ -1,0 +1,32 @@
+style "alette-notify-window"
+{
+    bg[NORMAL] = "#ECD9C5"
+    XfceNotifyWindow::border-color = "#5682B1"
+    XfceNotifyWindow::border-radius = 10.0
+    XfceNotifyWindow::border-width-hover = 3.0
+    XfceNotifyWindow::summary-bold = 1
+}
+class "XfceNotifyWindow" style "alette-notify-window"
+
+style "alette-notify-button"
+{
+    bg[NORMAL] = "#cccccc"
+    bg[PRELIGHT] = "#F0EDED"
+    fg[NORMAL] = "#303030"
+    fg[PRELIGHT] = "#303030"
+}
+widget_class "XfceNotifyWindow.*.GtkButton*" style "alette-notify-button"
+
+style "alette-notify-text"
+{
+    font_name = "Sans 14"
+    fg[NORMAL] = "#303030"
+    GtkWidget::link-color = "#a7a7a7"
+}
+widget_class "XfceNotifyWindow.*.<GtkLabel>" style "alette-notify-text"
+
+style "alette-notify-summary"
+{
+    font_name = "Bold"
+}
+widget "XfceNotifyWindow.*.summary" style "alette-notify-summary"

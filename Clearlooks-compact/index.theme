@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Clearlooks-compact
+Comment=Clearlooks-compact
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Clearlooks-compact
+MetacityTheme=Clearlooks-compact
+ButtonLayout=close,maximize,minimize:
